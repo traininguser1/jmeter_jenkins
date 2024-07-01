@@ -10,7 +10,7 @@ node {
         echo "STAGE: Run Jmeter test >>> STARTS";
         
         stage ('Run JMeter Test'){
-        bat 'D:/apache-jmeter-5.2.1/bin/jmeter.bat -n -t D:/Training/petstore-demo.jmx -l D:/Training/petstore-jtl-jenkins.jtl'
+        bat 'C:/Users/ladda/Desktop/Desktop/Training_Data/Jmeter/apache-jmeter-5.5/bin/jmeter.bat -n -t C:/Users/ladda/Desktop/Desktop/Training_Data/Jmeter/apache-jmeter-5.5/bin/Jmeter_Jenkins_Run.jmx -l C:/Users/ladda/Desktop/Desktop/Training_Data/Jmeter/apache-jmeter-5.5/bin/Jenkins_Jmeter_File_27thJune.jtl'
         }
             echo "STAGE: Run Jmeter test >>> ENDS";
      }
