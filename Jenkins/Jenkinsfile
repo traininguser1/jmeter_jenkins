@@ -10,7 +10,7 @@ node {
         echo "STAGE: Run Jmeter test >>> STARTS";
         
         stage ('Run JMeter Test'){
-        bat 'C:/Users/ladda/Desktop/Desktop/Training_Data/Jmeter/apache-jmeter-5.5/bin/jmeter.bat -n -t C:/Users/ladda/Desktop/Desktop/Training_Data/Jmeter/apache-jmeter-5.5/bin/Jmeter_Jenkins_Run.jmx -l C:/Users/ladda/Desktop/Desktop/Training_Data/Jmeter/apache-jmeter-5.5/bin/Jenkins_Jmeter_File_27thJune.jtl'
+        bat 'C:/Users/ladda/Music/Jmeter/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/jmeter -j jmeter.save.saveservice.output_format=xml -n -t C:/Users/ladda/Music/Jmeter/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/Thread_Group.jmx -l C:/Users/ladda/Music/Jmeter/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/Jenkins_Jmeter_File.jtl'
         }
             echo "STAGE: Run Jmeter test >>> ENDS";
      }
