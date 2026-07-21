@@ -9,6 +9,10 @@ node {
             
         echo "STAGE: Run Jmeter test >>> STARTS";
         
+        stage ('list files'){
+           bat 'dir'
+        }
+        
         stage ('Run JMeter Test'){
         bat 'C:/Users/ladda/Music/Jmeter/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/jmeter -j jmeter.save.saveservice.output_format=xml -n -t C:/Users/ladda/Music/Jmeter/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/Thread_Group.jmx -l C:/Users/ladda/Music/Jmeter/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/Jenkins_Jmeter_File.jtl'
         }
